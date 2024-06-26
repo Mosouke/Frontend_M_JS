@@ -1,0 +1,185 @@
+@font-face {
+    font-family: "Karla";
+    src: url("../assets/fonts/static/Karla-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url("../assets/fonts/static/Karla-bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url("../assets/fonts/Karla-italic-VariablesFont_wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url("../assets/fonts/Karla-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 900; 
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    font-family: "Karla", sans-serif;
+}
+
+:root {
+    /* Primary color */
+    --GR200_L: #dff1e7;
+    --GR600_M: #0c7d69;
+    --colorRed: #d73c3c;
+    /* neutral color */
+    --colorW: #ffffff;
+    --colrG500: #87a3a6;
+    --colrG900: #2b4246;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    padding: 10px 0;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+label {
+    font-size: 16px;
+    color: var(--colrG900);
+}
+
+body {
+    background-color: var(--GR200_L);
+}
+
+span {
+    font-size: 16px;
+    color: var(--GR600_M);
+}
+
+.container1400 {
+    max-width: 1440px;
+}
+
+h1 {
+    color: var(--colrG900);
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+section {
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#BG_Cw {
+    background-color: var(--colorW);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px auto;
+    min-width: 500px;
+}
+
+#BG_Cw form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#BG_Cw > form > div:nth-child(1) {
+    display: flex;
+    gap: 20px;
+}
+
+#BG_Cw form input#first_name, 
+#BG_Cw form input#last_name, 
+#BG_Cw form input#email,
+#BG_Cw form textarea#message {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--colrG500);
+}
+
+#BG_Cw form input#first_name:focus, 
+#BG_Cw form input#last_name:focus, 
+#BG_Cw form input#email:focus,
+#BG_Cw form textarea#message:focus {
+    outline: none;
+    border: 2px solid var(--GR600_M);
+    border-color: var(--GR600_M);
+}
+
+#BG_Cw form textarea#message {
+    height: 60px;
+}
+
+#flx {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+#flx div {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--colrG500);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+form div article.attribution_flx,
+form div.attribution_flx {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+form div button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: transparent;
+    background-color: var(--GR600_M);
+    color: var(--colorW);
+    cursor: pointer;
+}
+
+form div button:hover {
+    background-color: var(--colrG900);
+}
+
+.toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2b4246;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+}
+
+.error-message {
+    color: var(--colorRed);
+    font-size: 0.9em;
+    margin-top: 5px;
+}

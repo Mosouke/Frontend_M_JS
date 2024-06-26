@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+<title>Frontend Mentor | Contact form</title>
+</head>
+<body>
+<main class="container1440">
+    <section>
+        <div id="BG_Cw">
+            <h1>Contact Us</h1>
+            <form method="post" action="index.html" id="contactForm">
+                <div>
+                    <article class="attribution_flx">
+                        <label for="first_name">First Name <span>*</span></label>
+                        <input type="text" id="first_name" name="first_name" required>
+                        <span class="error-message"></span>
+                    </article>
+                    <article class="attribution_flx">
+                        <label for="last_name">Last Name <span>*</span></label>
+                        <input type="text" id="last_name" name="last_name" required>
+                        <span class="error-message"></span>
+                    </article>
+                </div>
+                <div class="attribution_flx">
+                    <label for="email">Email Address <span>*</span></label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message"></span>
+                </div>
+                <div>
+                    <label>Query Type <span>*</span></label>
+                    <div id="flx">
+                        <div>
+                            <input type="radio" id="general_enquiry" name="query_type" value="general_enquiry" required>
+                            <label for="general_enquiry">General Enquiry</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="support_request" name="query_type" value="support_request" required>
+                            <label for="support_request">Support Request</label>
+                        </div>
+                    </div>
+                    <span class="error-message"></span>
+                </div>
+                <div class="attribution_flx">
+                    <label for="message">Message <span>*</span></label>
+                    <textarea id="message" name="message" required></textarea>
+                    <span class="error-message"></span>
+                </div>
+                <div>
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">I consent to being contacted by the team <span>*</span></label>
+                    <span class="error-message"></span>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>            
+        </div>
+    </section>
+</main>
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Mosouke">Niko</a>.
+</div>
+<script src="script.js"></script>
+</body>
+</html>
